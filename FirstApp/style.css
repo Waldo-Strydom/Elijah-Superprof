@@ -1,0 +1,25 @@
+body{
+    margin:0;
+    padding: 0;
+}
+
+h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        text-align: center;
+
+}
+
+#out{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#btn{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgb(61, 197, 51);
+    margin-left:45vw;
+    
+}
