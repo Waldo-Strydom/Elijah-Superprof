@@ -1,0 +1,74 @@
+body{
+    margin:0%;
+    padding: 0%;
+    }
+    
+    nav{
+    font-size: 1.5rem;
+    margin: 2vh;
+    text-align: end;
+    font-weight: bold;
+    
+    }
+    a{
+    color: rgb(219, 81, 7); 
+    text-decoration: none;
+    }
+    a:visited{
+    color: rgb(7, 205, 219)
+    }
+    
+    a:hover{
+    color: rgb(1, 7, 8)
+    }
+    
+    h1{
+    text-align: center;
+    color: rgb(219, 81, 7);
+    }
+    
+    #inputDiv{
+    text-align: center;
+    background-color: rgb(1, 7, 8);
+    display:inline-block;
+    width: 70vw;
+    margin-left:15vw;
+    color: rgb(254,255,253);
+    font-size: 1.5rem;
+    box-shadow: 1vw 1vw 0.5vw rgb(44, 46, 46);
+    /* box-shadow: horizontal vertical, blur color */
+    
+    /* Block level, there's a br after element. 
+    Inline top/bottom margins/padding not respected. 
+    inline-block can set width/height */
+    
+    }
+    
+    #enterBtn{
+    background-color: rgb(219, 81, 7);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2vw;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    
+    }
+    
+    #enterBtn:focus, #enterBtn:hover{ 
+    background-color: rgb(7, 205, 219);
+    }
+    
+    #resultList{
+    display: block;
+    /* margin-left: 45vw; */
+    list-style:lower-roman;
+    text-align: center;
+    }
+    
+    li{
+    font-size: 1.5rem;
+    }
+    
+
+    
+    
