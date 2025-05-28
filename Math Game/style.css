@@ -1,0 +1,51 @@
+body{
+    margin:0%;
+    padding:0%;
+    background-image: url("./Assets/mathBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    #wrapper{
+        display: block;
+        justify-items: center;
+        margin:2vw;
+        font-size: 1.5rem;
+        
+        }
+
+        #logo{
+            width: 10vw;
+            height: 10vw;
+            margin-left: 80vw;
+            }
+            
+            #answerDiv{
+                padding: 2vw;
+                box-shadow: 1vw 1vw 0.5vw rgb(50,50,50);
+                }     
+                
+                
+                #numIn{
+                    font-size: 1.5rem;
+                    border-radius: 1vw;
+                    border:0.2vw solid rgb(1,4,2);
+                    }   
+
+                    .inBtn{
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        background-color: rgb(13, 230, 9);
+                        }    
+
+                        #typeSelect{
+                            font-size: 1.5rem;
+                            }   
+
+                            @media only screen and (max-width: 600px){
+
+                                body{
+                                background-color: rgb(13, 230, 9);
+                                }
+                                
+                                }                            

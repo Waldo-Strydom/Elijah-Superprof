@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Math Game</h1>
+        <img id="logo" src="./Assets/mathLogo.png" alt="Maths is fun logo.">
+
+        <p id="question">Question</p>
+
+        <div id="answerDiv">
+            <label>Enter Your Answer:</label>
+            <input id="numIn" type="number" placeholder="5">
+            <button id="enterBtn" class="inBtn">Enter</button>
+        </div>
+
+        <p id="marked">Correct!</p>
+
+        <select id="typeSelect">
+            <option value="+">+</option>
+            <option value="-">-</option>
+        </select>
+        <button id="newQuestion" class="inBtn">New Question</button>
+    </div>
+</body>
+</html>
