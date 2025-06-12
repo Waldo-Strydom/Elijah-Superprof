@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0%;
+
+
+    background-color: rgb(209, 10, 14);
+    color: rgb(5,5,5)
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    
+    text-align: center;
+}
+
+
+label, p, input, #outputTbl{
+    font-size: 1.5rem;
+}
+
+input{
+    max-width: 80vw;
+}
+
+button{
+    font-size: 1.5rem;
+    margin: 1vw;
+    
+}
+
+#outputTbl{
+    min-width: 80vw;
+    border: 1vw solid rgb(5,5,5);
+    justify-self: center;
+}
