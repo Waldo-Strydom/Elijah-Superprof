@@ -1,0 +1,82 @@
+let count = 0
+let eArr = []
+
+const first = ()=>{
+count +=1
+}
+function second(){
+
+let rem = count%2
+
+if(rem==0){
+eArr.push(count)
+}
+
+}
+
+
+while(eArr.length<5){
+first()
+second()
+console.log(eArr)
+}
+
+const a = ()=>{
+let user = "Dave"
+const id = 67
+user = "Sam"
+console.log(`${user} ${id}`)
+}
+a()
+
+const a = ()=>{
+let x = 5
+let y = 50
+let z = x+y
+console.log(z)
+}
+a()
+
+const a = ()=>{
+let x = 5
+let y = 50
+b(x,y)
+}
+
+const b = (x,y)=>{
+let z = x+y
+console.log(z)
+}
+a()
+
+const a = ()=>{
+    console.log("Hi")
+let arr = [5,5,5,5]
+let total = 0
+for(let i=0;i<arr.length;i++){
+
+total+=arr[i]
+console.log(total)
+
+}
+console.log(`grand total: ${total}`)
+}
+a()
+ 
+let count = 0
+const a = ()=>{
+
+count+=5
+
+if(count>=15){
+console.log("Count is greater than 15.")
+}else{
+console.log("Count is less than 15")
+}
+console.log(count)
+}
+
+const runBtn = document.getElementById("runBtn")
+runBtn.addEventListener("click", a)
+
+
