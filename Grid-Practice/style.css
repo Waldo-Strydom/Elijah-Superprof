@@ -1,0 +1,79 @@
+body{
+    margin:0%;
+    padding:0%;
+    /* max-width: 100%; */
+    justify-self: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+#calBody{
+    background-color: rgb(59,59,61);
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5,1fr);
+
+    border: 0.5rem solid rgb(3,3,2);
+    border-radius: 0.9rem;
+
+    /* width: 40vw; */
+}
+
+#screen{
+    grid-column: 1/-1;
+    grid-row: 1/1;
+    background-image: linear-gradient(rgb(4,110,11), rgb(2,61,6));
+    border: 0.01vw solid rgb(3,3,2)
+}
+
+@font-face{
+    font-family: digital;
+    src: url("./fonts/E1234.ttf");
+}
+
+#screenText{
+    font-family: digital;
+}
+
+.btnRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin: 1vh;
+}
+
+#row1{
+    grid-column: 1/-1;
+    grid-row:2/-5;
+}
+
+#row2{
+    grid-column: 1/-1;
+    grid-row: 3/3;
+}
+
+#row3{
+    grid-column:1/-1 ;
+    grid-row: 4/4;
+}
+
+#row4{
+    grid-column: 1/-1;
+    grid-row: 5/5;
+}
+
+button{
+    font-weight: bold;
+    color: rgb(237,235,235);
+    cursor: pointer;
+}
+
+.num{
+    border-radius: 50px;
+    background-color: rgb(105,102,102);
+}
+
+.operator, #C{
+    background-color: rgb(110,4,6);
+}
