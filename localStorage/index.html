@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Score Board</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./index.js" rel="JS" defer></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Score Board</h1>
+            <div id="inPutDiv">
+                <label for="nameIn">Enter Name:</label>
+                <input id="nameIn" type="text" placeholder="Name">
+
+                <label for="scoreIn">Enter Score:</label>
+                <input id="scoreIn" type="number" placeholder="Score">
+            </div>
+            <div id="buttonDiv">
+                <button id="addBtn">Add</button>
+                <button id="saveBtn">Save</button>
+                <button id="delBtn">Clear Data Base</button>
+            </div>
+            <table id="sbTable">
+                <th>Player:</th>
+                <th>Score:</th>
+            </table>
+        </div>
+        <div id="modal" class="hidden">
+<p id="modalText">Items Deleted</p>
+<button id="modalClose">Close</button>
+</div>
+    </body>
+</html>
