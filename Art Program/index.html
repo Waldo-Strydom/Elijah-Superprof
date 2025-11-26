@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Art Program</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./style.css" rel="stylesheet">
+        <script src="./index.js" rel="JS" defer></script>
+    </head>
+    <body>
+        <div id="openControlDiv" >
+            <h1 id="openControlBtn">&#9776;</h1>
+        </div>
+        <div id="controlDiv" class="">
+            <div id="sizeDiv" class="controlItm">
+                <p id="backArrow">&#8606;</p>
+                <p id="sizeTxt">Size: 5</p>
+                <div class="cBtnDiv">
+                <button class="sBtn cBtn plus">+</button>
+                <button class="sBtn cBtn minus">-</button>
+                </div>
+                <div id="sizeDisplay"></div>
+
+
+            </div>
+
+            <div id="colourDiv" class="controlItm">
+                <p id="colourTxt">Change Colour</p>
+                <div id="colourDisplay"></div>
+
+                <div id="colourSquares">
+                    <div class="colSquare">(0,0,0)</div>
+                    <div class="colSquare">(250,250,250)</div>
+                    <div class="colSquare">(255,0,0)</div>
+                    <div class="colSquare">(255,128,0)</div>
+                    <div class="colSquare">(255,255,0)</div>
+                    <div class="colSquare">(128,255,0)</div>
+                    <div class="colSquare">(0,255,0)</div>
+                    <div class="colSquare">(0,255,128)</div>
+                    <div class="colSquare">(0,255,255)</div>
+                    <div class="colSquare">(0,128,255)</div>
+                    <div class="colSquare">(0,0,255)</div>
+                    <div class="colSquare">(128,0,255)</div>
+                    <div class="colSquare">(255,0,255)</div>
+                    <div class="colSquare">(255,0,128)</div>
+                </div>
+
+                <div id="colourControlsDiv">
+                     <p id="rTxt">Red: 0</p>
+                <div class="cBtnDiv">
+                     <button class="rBtn cBtn colBtn plus">+</button>
+                     <button class="rBtn cBtn colBtn minus">-</button>
+                </div>
+
+
+                     <p id="gTxt">Green: 0</p>
+                <div class="cBtnDiv">
+                     <button class="gBtn cBtn colBtn plus">+</button>
+                     <button class="gBtn cBtn colBtn minus">-</button>
+                </div>
+
+
+                     <p id="bTxt">Blue: 0</p>
+                <div class="cBtnDiv">
+                     <button class="bBtn cBtn colBtn plus">+</button>
+                     <button class="bBtn cBtn colBtn minus">-</button>
+                </div>
+
+                </div>
+               
+            </div>
+            <div id="clearDiv" class="controlItm">
+                <button id="clearCanvasBtn" class="eBtn">Clear Canvas</button>
+            </div>
+            <div id="eraserDiv" class="controlItm">
+                <button id="eraserBtn" class="eBtn">Eraser</button>
+            </div>
+        </div>
+        <canvas id="myCanvas"></canvas>
+    </body>
+</html>

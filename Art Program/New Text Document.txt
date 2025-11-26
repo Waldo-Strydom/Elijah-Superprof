@@ -1,0 +1,165 @@
+// Colour changing
+
+const colSquares = document.querySelectorAll(".colSquare")
+colSquares.forEach((e)=>{
+    e.style.backgroundColor = `rgb${e.textContent}`;
+    e.style.fontSize = "0px"
+    
+    e.addEventListener("click",()=>{
+        colSquareFun(e.textContent)
+    })
+    
+})
+
+const colSquareFun = (colourText)=>{
+
+    let parsedText = colourText.split(",")
+    console.log(parsedText)
+
+    let r = parsedText[0].split("(")
+    r = parseInt(r[1])
+    
+    let g = parsedText[1]
+    g = parseInt(g)
+    
+    let b = parsedText[2].split(")")
+    b = parseInt(b)
+    
+    red = r
+    green = g
+    blue = b
+
+            ctx.fillStyle = `rgb(${red},${green},${blue})`;
+        colourDisplay.style.backgroundColor = `rgb(${red},${green},${blue})`;
+
+        rTxt.textContent=`Red: ${red}`;
+        gTxt.textContent=`green: ${green}`;
+        bTxt.textContent=`Blue: ${blue}`;
+}
+
+
+const colBtns = document.querySelectorAll(".colBtn")
+const colourDisplay = document.getElementById("colourDisplay")
+
+const rTxt = document.getElementById("rTxt")
+const gTxt = document.getElementById("gTxt")
+const bTxt = document.getElementById("bTxt")
+
+colBtns.forEach((e)=>{
+    e.addEventListener("mousedown",()=>{
+        let colPressed = true
+
+                 updateColNum(e)
+
+       
+    
+    e.addEventListener("mouseup",()=>{
+
+            colPressed=false
+            clearInterval(addCol)
+        })
+        
+        if(colPressed){
+            var addCol = setInterval(()=>{
+                updateColNum(e)
+
+
+            },100)
+            
+        }
+        })
+
+        })
+
+colBtns.forEach((e)=>{
+    e.addEventListener("touchstart",()=>{
+        let colPressed = true
+
+       
+    
+    e.addEventListener("touchend",()=>{
+      
+            colPressed=false
+            clearInterval(addCol)
+        })
+        
+        if(colPressed){
+            var addCol = setInterval(()=>{
+                updateColNum(e)
+
+
+            },100)
+            
+        }
+        })
+
+        })
+
+const updateColNum = (e)=>{
+        switch(true){
+            case e.classList.contains("rBtn"):
+                if(e.textContent=="+" && red<255){
+                    red+=1
+                }
+                if(e.textContent=="-" && red>0){
+                    red-=1
+                }
+                rTxt.textContent=`Red: ${red}`;
+            break;
+
+            case e.classList.contains("gBtn"):
+                if(e.textContent=="+" && green<255){
+                    green+=1
+                }
+                if(e.textContent=="-" && green>0){
+                    green-=1
+                }
+                 gTxt.textContent=`green: ${green}`;
+            break;
+
+            case e.classList.contains("bBtn"):
+                if(e.textContent=="+" && blue<255){
+                    blue+=1
+                }
+                if(e.textContent=="-" && blue>0){
+                    blue-=1
+                }
+                bTxt.textContent=`Blue: ${blue}`;
+            break;
+
+        }
+
+        ctx.fillStyle = `rgb(${red},${green},${blue})`;
+        colourDisplay.style.backgroundColor = `rgb(${red},${green},${blue})`;
+  
+}
+
+
+
+// Clear canvas
+
+const clearBtn = document.getElementById("clearCanvasBtn")
+clearBtn.addEventListener("click", ()=>{
+    ctx.fillStyle = `rgb(250,250,250)`;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = `rgb(${red},${green},${blue})`;
+    closeFun()
+
+})
+
+// Eraser
+const eraserBtn = document.getElementById("eraserBtn")
+eraserBtn.addEventListener("click", ()=>{
+
+    red = 250
+    green = 250
+    blue = 250
+
+        ctx.fillStyle = `rgb(${red},${green},${blue})`;
+        colourDisplay.style.backgroundColor = `rgb(${red},${green},${blue})`;
+    
+        rTxt.textContent=`Red: ${red}`;
+        gTxt.textContent=`green: ${green}`;
+        bTxt.textContent=`Blue: ${blue}`;
+
+})

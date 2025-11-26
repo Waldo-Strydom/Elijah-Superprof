@@ -1,0 +1,165 @@
+body,html{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    touch-action: none;
+}
+/* green 105, 247, 77 */
+/* red 247, 77, 77 */
+#myCanvas{
+    border:2px solid black;
+    background-color: rgb(250,250,250);
+    width: 90vw;
+    height: 90vw;
+    z-index: 0;
+    margin-left: 5vw;
+}
+
+@font-face{
+    font-family: marker;
+    src: url("./Assets/empty-marker/EmptyMarkerBold-Regular.otf")
+}
+
+
+
+.open{
+    animation: openControl 2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.close{
+    animation: closeControl 2s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes openControl{
+    from{left:-100vw}
+    to{left:0}
+}
+
+@keyframes closeControl{
+    from{left:0vw}
+    to{left:-100}
+}
+
+#openControlBtn{
+    text-align: center;
+    width: 80vw;
+    justify-self: center;
+    border: 0.4vw solid rgb(5,5,5);
+    box-shadow: 0.4vw 0.4vw 0.4vw rgb(5,5,5);
+    border-radius: 3vw;
+    background-color: rgb(77, 230, 247) ;
+}
+
+ #openControlBtn:active{
+    background-color: rgb(250,250,250) ;
+
+}
+
+#openControlBtn:focus {
+    outline: none;
+    background-color: rgb(77, 230, 247);
+}
+
+#controlDiv{
+    z-index: 10;
+    background-color: rgb(250,250,250);
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.5rem;
+    font-family: marker;
+    overflow-y: scroll;
+
+    position: absolute;
+    top: 0;
+    left:-110%;
+
+    
+}
+
+#backArrow{
+    font-size: 3rem;
+    display: inline;
+    margin-left: 80%;
+    border: 0.4vw solid rgb(5,5,5);
+    box-shadow: 0.4vw 0.4vw 0.4vw rgb(5,5,5);
+    border-radius: 3vw;
+    background-color: rgb(77, 230, 247);
+}
+#backArrow:hover{
+    cursor: pointer;
+    background-color: rgb(250,250,250);
+}
+
+#sizeDisplay{
+    width: 5px;
+    height: 5px;
+    background-color: rgb(5,5,5);
+    justify-self: center;
+}
+
+#colourSquares{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2vw;
+    justify-content: center;
+  
+}
+
+.colSquare{
+    width: 13vw;
+    height: 13vw;
+    margin-bottom: 1vw;
+}
+
+.colSquare:hover{
+    border: 1vw solid rgb(5,5,5);
+    box-shadow: 1vw 1vw 1vw rgb(5,5,5);
+}
+
+.cBtnDiv{
+    display: flex;
+    width: 90vw;
+    justify-self: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+
+.cBtn, .eBtn{
+    font-size: 1.5rem;
+    font-family: marker;
+    width: 15vw;
+    border: 1vw solid rgb(5,5,5);
+    box-shadow: 1vw 1vw 1vw rgb(5,5,5);
+    border-radius: 3vw;
+}
+
+.plus{
+    background-color: rgb(105, 247, 77 );
+}
+
+
+.minus{
+    background-color: rgb(247, 77, 77);
+}
+
+#colourDisplay{
+    width: 10vw;
+    height: 10vw;
+    background-color: rgb(0,0,0);
+    justify-self: center;
+    border: 1vw solid rgb(5,5,5);
+}
+
+.eBtn{
+    width: 50vw;
+    margin-top: 2vh;
+    background-color: rgb(77, 230, 247);
+}
