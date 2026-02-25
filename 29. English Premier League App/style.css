@@ -1,0 +1,194 @@
+:root{
+    --blue: rgb(4,245,255);
+    --pink: rgb(233,0,82);
+    --white: rgb(255,255,255);
+    --green: rgb(0,255,133);
+    --purple: rgb(56,0,60);
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: var(--purple);
+    color: var(--white);
+    font-family: epl;
+    overflow-x: hidden;
+}
+
+#logo{
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+}
+
+@font-face{
+    font-family: epl;
+    src:url("./Assets/premier-league/Barclays\ Premier\ League.ttf")
+}
+
+#wrapper{
+    text-align: center; 
+}
+
+
+
+#output{
+    border: 1vw groove var(--white);
+    width: 90vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+
+}
+
+#teamDiv{
+    display: flex;
+
+}
+
+.teamOut{
+    width: 50%;
+    font-size: 2rem;
+}
+
+#hName, #aName{
+    overflow-wrap: break-word;
+}
+
+.teamLogo{
+    width: 30%;
+}
+
+a:link{
+    color: var(--purple);
+}
+
+a:visited {
+  color: var(--pink);
+}
+
+a:hover {
+  color: var(--green);
+}
+
+#vidText{
+    background-color: var(--white);
+}
+
+#ntxAndPrevDiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw;
+}
+
+#selectionDiv{
+    margin-top: 2vw;
+    padding: 1vw;
+    border: 1vw groove var(--white);
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.selector{
+    font-weight: bold;
+    background-color: var(--purple);
+    color: var(--white);
+    border: dashed 0.1vw var(--white);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.getBtn{
+    font-weight: bold;
+    color: var(--purple);
+    background-color: var(--white);
+    padding-left:2vw;
+    padding-right:2vw;
+
+}
+
+.getBtn:hover{
+    cursor: pointer;
+}
+
+#playerListDiv{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.playerInfoDiv{
+    
+    text-align: center;
+    border-bottom: 1vw solid var(--white);
+
+    display: flex;
+    flex-direction: row;
+}
+
+.infoDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30%;
+}
+
+.pPic{
+    max-width: 80%;
+   
+}
+
+.pBio{
+    width: 70%;
+   
+    align-self: flex-end;
+    justify-self: end;
+
+}
+
+.hidden{
+    display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #teamDiv{
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .teamOut{
+       width: 100%; 
+    }
+
+    .playerInfoDiv{
+        flex-direction: column;
+    }
+    .infoDiv{
+        width: 100%;
+    }
+
+    .pBio{
+     align-self: center;
+     width: 100%;
+    }
+
+    .getBtn, .selector{
+        width: 80%;
+        margin: 1vh 0vh;
+    }
+
+    .selector{
+        margin-bottom: 2vh;
+    }
+}

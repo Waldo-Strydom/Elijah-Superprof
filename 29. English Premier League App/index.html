@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Premier League</title>
+    <link href="./style.css" rel="stylesheet">
+    <script src="./index.js" defer></script>
+</head>
+<body>
+    <img id="logo" src="./Assets/premier-league/logo.png" alt="English Premier League Logo">
+  <div id="wrapper">
+    <h1>English Premier League</h1>
+    <div id="selectionDiv">
+        <select id="team1" name="team1" class="selector" aria-label="home team selection">
+            <optgroup label="Team 1">
+                <option value="Arsenal">Arsenal</option>
+                <option value="Aston Villa">Aston Villa</option>
+                <option value="Bournemouth">Bournemouth</option>
+                <option value="Brentford">Brentford</option>
+
+                <option value="Brighton and Hove">Brighton and Hove</option>
+                <option value="Burnley">Burnley</option>
+                <option value="Chelsea">Chelsea</option>
+                <option value="Crystal Palace">Crystal Palace</option>
+
+                <option value="Everton">Everton</option>
+                <option value="Fulham">Fulham</option>
+                <option value="Leeds United">Leeds United</option>
+                <option value="Liverpool">Liverpool</option>
+
+                <option value="Manchester City">Manchester City</option>
+                <option value="Manchester United">Manchester United</option>
+                <option value="Newcastle United">Newcastle United</option>
+                <option value="Nottingham Forest">Nottingham Forest</option>
+
+                <option value="Sunderland">Sunderland</option>
+                <option value="Tottenham Hotspur">Tottenham Hotspur</option>
+                <option value="West Ham United">West Ham United</option>
+                <option value="Wolverhampton Wan">Wolverhampton Wan</option>
+            </optgroup>
+            
+        </select>
+            <button id="getMatch" class="getBtn">Get Match</button>
+                <select id="team2" name="team2" class="selector" aria-label="away team selection">
+            <optgroup label="Team 2">
+                <option value="Arsenal">Arsenal</option>
+                <option value="Aston Villa">Aston Villa</option>
+                <option value="Bournemouth">Bournemouth</option>
+                <option value="Brentford">Brentford</option>
+
+                <option value="Brighton and Hove">Brighton and Hove</option>
+                <option value="Burnley">Burnley</option>
+                <option value="Chelsea">Chelsea</option>
+                <option value="Crystal Palace">Crystal Palace</option>
+
+                <option value="Everton">Everton</option>
+                <option value="Fulham">Fulham</option>
+                <option value="Leeds United">Leeds United</option>
+                <option value="Liverpool">Liverpool</option>
+
+                <option value="Manchester City">Manchester City</option>
+                <option value="Manchester United">Manchester United</option>
+                <option value="Newcastle United">Newcastle United</option>
+                <option value="Nottingham Forest">Nottingham Forest</option>
+
+                <option value="Sunderland">Sunderland</option>
+                <option value="Tottenham Hotspur">Tottenham Hotspur</option>
+                <option value="West Ham United">West Ham United</option>
+                <option value="Wolverhampton Wan">Wolverhampton Wan</option>
+            </optgroup>
+            
+        </select>
+        
+    </div>
+    <div id="playerListDiv">
+        <select id="playerList" name="playerList" class="selector" aria-label="player list selection">
+                            <option value="Arsenal">Arsenal</option>
+                <option value="Aston Villa">Aston Villa</option>
+                <option value="Bournemouth">Bournemouth</option>
+                <option value="Brentford">Brentford</option>
+
+                <option value="Brighton and Hove">Brighton and Hove</option>
+                <option value="Burnley">Burnley</option>
+                <option value="Chelsea">Chelsea</option>
+                <option value="Crystal Palace">Crystal Palace</option>
+
+                <option value="Everton">Everton</option>
+                <option value="Fulham">Fulham</option>
+                <option value="Leeds United">Leeds United</option>
+                <option value="Liverpool">Liverpool</option>
+
+                <option value="Manchester City">Manchester City</option>
+                <option value="Manchester United">Manchester United</option>
+                <option value="Newcastle United">Newcastle United</option>
+                <option value="Nottingham Forest">Nottingham Forest</option>
+
+                <option value="Sunderland">Sunderland</option>
+                <option value="Tottenham Hotspur">Tottenham Hotspur</option>
+                <option value="West Ham United">West Ham United</option>
+                <option value="Wolverhampton Wan">Wolverhampton Wan</option>
+        </select>
+        <button id="listBtn" class="getBtn">Get Player List</button>
+    </div>
+    <div id="output" class="hidden">
+
+        <!-- <div class="playerInfoDiv" class="hidden">
+            <div class="infoDiv">
+            <p class="pName">Ben White</p>
+            <p class="pNum">4</p>
+            <img class="pPic" src="./Assets/premier-league/testImg.png">
+            </div>
+            <p class="pBio">Benjamin William White (born 8 October 1997) is an English professional footballer who plays as a centre-back for Premier League club Arsenal and the England national team.\r\n\r\nWhilst with Brighton & Hove Albion, White had spells on loan at Newport County of League Two, Peterborough United of League One and Leeds United. At Leeds he played in every game, helping them win the 2019–20 Championship and gain promotion to the Premier League. White has played in all top four English leagues, making his way up from League Two to the Premier League in the space of four seasons.\r\n\r\nIn the summer of 2020, speculation regarding his football future was rife, with Leeds public on their eagerness to sign White on a permanent deal and other clubs registering their interest. Ultimately, he stayed on the south coast, signing a long term contract at Brighton. He made 36 Premier League appearances in the 2020–21 season, winning Brighton's 2020–21 player of the season award.\r\n\r\nWhite was named in the England team for the first time in May 2021, where he was selected as part of the provisional 33-man squad for UEFA Euro 2020. He was later cut from the squad, though remained on standby for the tournament and made his debut as a substitute in June in a 1–0 win over Austria. He made his first start for England in the second and final warm up match in another 1–0 victory, this time against Romania on 6 June. On 7 June, he was named in the squad as a replacement for Trent Alexander-Arnold.</p>
+
+            </div>
+
+                    <div class="playerInfoDiv" class="hidden">
+            <div class="infoDiv">
+            <p class="pName">Ben White</p>
+            <p class="pNum">4</p>
+            <img class="pPic" src="./Assets/premier-league/testImg.png">
+            </div>
+            <p class="pBio">Benjamin William White (born 8 October 1997) is an English professional footballer who plays as a centre-back for Premier League club Arsenal and the England national team.\r\n\r\nWhilst with Brighton & Hove Albion, White had spells on loan at Newport County of League Two, Peterborough United of League One and Leeds United. At Leeds he played in every game, helping them win the 2019–20 Championship and gain promotion to the Premier League. White has played in all top four English leagues, making his way up from League Two to the Premier League in the space of four seasons.\r\n\r\nIn the summer of 2020, speculation regarding his football future was rife, with Leeds public on their eagerness to sign White on a permanent deal and other clubs registering their interest. Ultimately, he stayed on the south coast, signing a long term contract at Brighton. He made 36 Premier League appearances in the 2020–21 season, winning Brighton's 2020–21 player of the season award.\r\n\r\nWhite was named in the England team for the first time in May 2021, where he was selected as part of the provisional 33-man squad for UEFA Euro 2020. He was later cut from the squad, though remained on standby for the tournament and made his debut as a substitute in June in a 1–0 win over Austria. He made his first start for England in the second and final warm up match in another 1–0 victory, this time against Romania on 6 June. On 7 June, he was named in the squad as a replacement for Trent Alexander-Arnold.</p>
+
+            </div>
+            -->
+
+
+
+        <div id="teamDiv" >
+
+        <div id="homeTeam" class="teamOut">
+            <p id="hName"></p>
+            <img id="hTeamLogo" class="teamLogo" src="">
+            <p id="hScore"></p>
+        </div>
+
+        <div id="awayTeam" class="teamOut">
+            <p id="aName"></p>
+                <img id="aTeamLogo" class="teamLogo" src="">
+            <p id="aScore"></p>
+        </div>
+
+
+        </div>
+
+        <p id="dateText"></p>
+        <p id="venueText"></p>
+        <a id="vidLink" href=""><p id="vidText">Highlights Video</p></a>
+       <div id="ntxAndPrevDiv">
+        <button id="prev" class="getBtn">Previous</button>
+        <button id="nxt" class="getBtn">Next</button>
+       </div>
+    </div> 
+    
+  </div>  
+</body>
+</html>
