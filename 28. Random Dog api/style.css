@@ -1,0 +1,43 @@
+body{
+    margin:0%;
+    padding: 0%;
+    background-color: rgb(237, 150, 63);
+    overflow-x: hidden;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 5vh;
+    text-align: center;
+    border: 1.5vw double rgb(50,50,50);
+    box-shadow: 1vw 1vw 1vw rgb(5,5,5);
+
+    max-width: 80vw;
+    min-width: 35vw;
+    
+}
+
+h1{
+
+  background: linear-gradient(rgb(245,245,245), rgb(5,5,5));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+
+#outImg{
+    /* aspect-ratio: 1/1; */
+    width: 100%;
+    /* max-width: 80vw;
+    min-width: 35vw;
+    max-height: 10%; */
+    
+}
+
+#getDog{
+    margin: 1vw;
+    background-color: rgb(238, 121, 3);
+    font-size: 2rem;
+    cursor: pointer;
+}
